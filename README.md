@@ -6,29 +6,28 @@ Step by step, you’ll go from a scratch ReAct agent to advanced topics like per
 
 🎯 Goal: Make LangGraph concepts practical, reproducible, and easy to showcase for recruiters and technical reviewers.
 
-📚 Lessons
 
-Each notebook is a self-contained tutorial:
 
-Lesson 1 – Simple ReAct Agent from Scratch
-Thought → Action → Observation → Answer loop, with simple tools (calculate, average_dog_weight)
 
-Lesson 2 – LangGraph Components
-Nodes, edges, and state passing; connecting agents to information sources
+## 📚 Lessons
 
-Lesson 3 – Agentic Search
-Agent-driven strategies and structured querying
+> Each notebook is a self-contained tutorial.
 
-Lesson 4 – Persistence & Streaming
-Persistent states, memory updates, and real-time streaming
+| # | Lesson | What you’ll practice | Highlights |
+|---:|---|---|---|
+| 1 | **Simple ReAct Agent from Scratch** | Thought → Action → Observation → Answer loop | Tiny tools: `calculate`, `average_dog_weight` |
+| 2 | **LangGraph Components** | Nodes, edges, state passing | Connect agents to information sources |
+| 3 | **Agentic Search** | Agent-driven search & structured querying | Retrieval strategies |
+| 4 | **Persistence & Streaming** | Persistent state & memory updates | Real-time streaming UX |
+| 5 | **Human-in-the-Loop** | Human feedback & oversight | Mixed-initiative collaboration |
+| 6 | **Essay Writer** | Long-form, coherent generation | Knowledge-graph-aware writing |
 
-Lesson 5 – Human-in-the-Loop
-Human feedback, mixed-initiative collaboration
 
-Lesson 6 – Essay Writer
-A creative-writing agent leveraging knowledge graphs
 
-📊 Learning Workflow
+
+
+
+## 📊 Learning Workflow
 
 ```mermaid
 flowchart TD
