@@ -30,19 +30,26 @@ A creative-writing agent leveraging knowledge graphs
 
 📊 Learning Workflow
 
+```mermaid
 flowchart TD
     A[ReAct Agent] --> B[LangGraph Components]
     B --> C[Agentic Search]
     C --> D[Persistence & Streaming]
     D --> E[Human-in-the-Loop]
     E --> F[Essay Writer]
+```
+
 
 ⚡ Quick Start
-
+```
 git clone https://github.com/gorkenvm/AI-Agents-in-LangGraph.git
+
 cd AI-Agents-in-LangGraph
+
 python -m venv .venv
+
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
 pip install -r requirements.txt
 
 Create a .env file in the root:
@@ -51,10 +58,11 @@ MODEL_NAME=gpt-4o
 TEMPERATURE=0
 
 Run notebooks: jupyter lab
-
+```
 
 🛠️ Project Structure
 
+```
 AI-Agents-in-LangGraph/
 ├─ notebooks/          → Step-by-step tutorials
 ├─ src/                → Reusable code (config, tools, utils)
@@ -67,11 +75,12 @@ AI-Agents-in-LangGraph/
 ├─ requirements-dev.txt→ Dev/test dependencies
 ├─ Makefile            → Common commands
 └─ README.md
+```
 
 
 
 🧹 Pre-commit Hooks
-
+```
 .pre-commit-config.yaml includes:
 
 black → formatting
@@ -83,16 +92,16 @@ isort → import sorting
 nbstripout → cleans notebook outputs
 
 Enable with: pre-commit install
-
+```
 
 📖 Usage
-
+```
 Run make run to start Jupyter Lab
 
 Open notebooks in order (Lesson 1 → Lesson 6)
 
 Modify tools, extend pipelines, and experiment 🚀
-
+```
 🤝 Contributing
 
 Contributions welcome!
