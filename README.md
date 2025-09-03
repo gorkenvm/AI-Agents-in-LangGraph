@@ -1,44 +1,101 @@
-# AI-Agents-in-LangGraph
+🤖 AI Agents in LangGraph 🚀
 
-This repository demonstrates the integration of AI agents with knowledge graphs, using the LangGraph framework. The notebooks explore various aspects of building AI-powered agents that can interact with and leverage structured knowledge representations.
+A hands-on educational project showing how to build AI agents with LangGraph
+.
+Step by step, you’ll go from a scratch ReAct agent to advanced topics like persistence, streaming, human-in-the-loop, and creative generation.
 
-L1_Simple_ReAct_Agent_from_Scratch.ipynb
+🎯 Goal: Make LangGraph concepts practical, reproducible, and easy to showcase for recruiters and technical reviewers.
 
-Building a simple reactive agent from scratch
-Implementing agent-environment interactions
-Basic agent decision-making and action execution
+📚 Lessons
+
+Each notebook is a self-contained tutorial:
+
+Lesson 1 – Simple ReAct Agent from Scratch
+Thought → Action → Observation → Answer loop, with simple tools (calculate, average_dog_weight)
+
+Lesson 2 – LangGraph Components
+Nodes, edges, and state passing; connecting agents to information sources
+
+Lesson 3 – Agentic Search
+Agent-driven strategies and structured querying
+
+Lesson 4 – Persistence & Streaming
+Persistent states, memory updates, and real-time streaming
+
+Lesson 5 – Human-in-the-Loop
+Human feedback, mixed-initiative collaboration
+
+Lesson 6 – Essay Writer
+A creative-writing agent leveraging knowledge graphs
+
+📊 Learning Workflow
+
+flowchart TD
+    A[ReAct Agent] --> B[LangGraph Components]
+    B --> C[Agentic Search]
+    C --> D[Persistence & Streaming]
+    D --> E[Human-in-the-Loop]
+    E --> F[Essay Writer]
+
+⚡ Quick Start
+
+git clone https://github.com/gorkenvm/AI-Agents-in-LangGraph.git
+cd AI-Agents-in-LangGraph
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+Create a .env file in the root:
+OPENAI_API_KEY=your_api_key_here
+MODEL_NAME=gpt-4o
+TEMPERATURE=0
+
+Run notebooks: jupyter lab
 
 
-L2_LangGraph_Components.ipynb
+🛠️ Project Structure
 
-Overview of the key components in the LangGraph framework
-Integrating agents with knowledge graphs
-Connecting agents to information sources
-
-
-L3_Agentic_Search.ipynb
-
-Techniques for agent-driven search and exploration
-Querying knowledge graphs to drive agent decision-making
-Optimizing agent search strategies
-
-
-L4_Persistence_And_Streaming.ipynb
-
-Implementing persistent agent states
-Handling agent memory and knowledge updates
-Streaming and real-time agent interactions
+AI-Agents-in-LangGraph/
+├─ notebooks/          → Step-by-step tutorials
+├─ src/                → Reusable code (config, tools, utils)
+│  ├─ config.py
+│  └─ tools/
+│     └─ dog_weights.py
+├─ tests/              → Unit tests
+├─ reports/            → Figures, summaries
+├─ requirements.txt    → Core dependencies
+├─ requirements-dev.txt→ Dev/test dependencies
+├─ Makefile            → Common commands
+└─ README.md
 
 
-L5_Human_in_the_Loop.ipynb
 
-Integrating human input and feedback
-Mixed-initiative agent-human collaboration
-Incorporating human guidance and oversight
+🧹 Pre-commit Hooks
+
+.pre-commit-config.yaml includes:
+
+black → formatting
+
+ruff → linting
+
+isort → import sorting
+
+nbstripout → cleans notebook outputs
+
+Enable with: pre-commit install
 
 
-L6_Essay_Writer.ipynb
+📖 Usage
 
-Building an AI agent for creative writing tasks
-Leveraging knowledge graphs to enhance content generation
-Techniques for maintaining coherence and context
+Run make run to start Jupyter Lab
+
+Open notebooks in order (Lesson 1 → Lesson 6)
+
+Modify tools, extend pipelines, and experiment 🚀
+
+🤝 Contributing
+
+Contributions welcome!
+Fork the repo, create a branch, and submit a PR.
+If you find a bug, please open an issue
+.

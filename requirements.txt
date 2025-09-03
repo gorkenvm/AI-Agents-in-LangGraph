@@ -1,0 +1,9 @@
+langgraph
+langchain
+openai
+httpx
+python-dotenv
+ipykernel
+pydantic
+tqdm
+networkx
